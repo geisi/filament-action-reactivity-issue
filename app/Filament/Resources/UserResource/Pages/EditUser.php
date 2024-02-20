@@ -20,7 +20,6 @@ class EditUser extends EditRecord
                 ->form([
                     Textarea::make('content')
                         ->reactive()
-                        ->debounce(600)
                         ->required(),
                 ])
                 ->label('Open Action'),
